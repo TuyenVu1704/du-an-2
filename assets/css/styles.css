@@ -4,6 +4,7 @@
 
 :root {
     --font-heading: "Sen", sans-serif;
+    --primary-color: #ffb900;
 }
 
 html {
@@ -63,7 +64,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 42px;
-    padding: 8px 0 16px 0;
+    padding: 16px 0 16px 0;
 }
 
 .header .nav .active {
@@ -97,7 +98,7 @@ a {
 /* Hero */
 
 .hero {
-    padding-top: 48px;
+    padding: 48px 0 65px;
     background: #fffcf4;
 }
 
@@ -109,12 +110,67 @@ a {
 
 .hero .left {
     width: 48%;
+    position: relative;
 }
 
 .hero .left .img-hero {
     width: 470px;
     height: 685px;
     border-radius: 20px;
+}
+
+/* Summary */
+
+.hero .summary {
+    width: 270px;
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 24px 0 24px 24px;
+}
+
+.hero .summary .item-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 22px;
+}
+
+.hero .summary .item-list:nth-last-child(1) {
+    padding-bottom: 0px;
+}
+
+.hero .item-list .item {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff9e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .item-list:nth-child(2) .item {
+    background: #fcefff;
+}
+
+.hero .item-list:nth-child(3) .item {
+    background: #ebeaff;
+}
+.summary .info .desc {
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #5f5b53;
+}
+
+.summary .info .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
 }
 
 .hero .right {
@@ -180,4 +236,25 @@ a {
 
 .hero .recent {
     margin-top: 26px;
+}
+
+.hero .value {
+    display: flex;
+}
+
+.hero .value .value-desc {
+    margin-top: -14px;
+    font-size: 1.8rem;
+    color: #5f5b53;
+}
+
+.hero .value .value-desc:nth-of-type(2) {
+    margin-left: 32px;
+}
+
+.hero .value strong {
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    color: #171100;
+    margin-right: 8px;
 }
