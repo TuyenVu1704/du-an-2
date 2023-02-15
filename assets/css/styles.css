@@ -2,9 +2,8 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    scroll-behavior: smooth;
+:root {
+    --font-heading: "Sen", sans-serif;
 }
 
 html {
@@ -12,11 +11,13 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 /* Common */
+
 a {
     text-decoration: none;
 }
@@ -29,189 +30,154 @@ a {
 }
 
 .btn {
-    display: inline-block;
-    min-width: 118px;
-    padding: 12px 24px;
+    width: 118px;
     font-weight: 600;
-    font-size: 1.6rem;
-    text-align: center;
     color: #ffffff;
     background: #171100;
     border-radius: 999px;
+    text-align: center;
 }
 
-.btn:hover {
-    opacity: 0.9;
-}
-
-.line-clamp {
-    display: -webkit-box;
-    -webkit-line-clamp: var(--line-clamp, 1);
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.line-clamp.line-2 {
-    --line-clamp: 2;
-}
-
-.break-all {
-    word-break: break-all;
-}
 /* Header */
 
 .header {
-    background-color: #fffcf4;
+    padding-top: 36px;
+    background: #fffcf4;
+}
+
+.header-fix {
+    position: sticky;
+    top: -26px;
+    overflow: hidden;
 }
 
 .header .body {
     display: flex;
     align-items: center;
-    padding: 36px 0 8px;
+    justify-content: space-between;
 }
 
-header.fixed {
-    position: sticky;
-    top: -28px;
-    z-index: 1;
-}
-
-.nav {
-    margin-left: auto;
-}
-
-.nav ul {
+.header .nav,
+.header .nav ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    padding: 8px 0 16px 0;
 }
 
-.nav li a {
-    position: relative;
-    padding: 8px 21px;
-}
-
-.nav a {
-    font-size: 1.6rem;
-    color: #5f5b53;
-}
-
-.nav a:hover,
-.nav li.active a {
-    text-shadow: 1px 0 0 currentColor;
+.header .nav .active {
+    font-weight: 600;
     color: #171100;
+    position: relative;
 }
 
-.nav li.active a::after {
-    position: absolute;
+.header .nav .active::after {
     content: "";
-    left: 21px;
-    bottom: 6px;
     display: block;
+    position: absolute;
     width: 12px;
     height: 2px;
     background: #171100;
     border-radius: 1px;
 }
 
-.header .btn {
-    min-width: 144px;
+.header li a {
+    color: #5f5b53;
 }
 
-.header .action {
-    margin-left: 49px;
+.nav .action {
+    margin-left: 70px;
+}
+
+.nav .action .btn {
+    padding: 11px 41px;
 }
 
 /* Hero */
 
 .hero {
+    padding-top: 48px;
     background: #fffcf4;
 }
 
 .hero .body {
-    padding: 65px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.hero-value {
-    width: 570px;
+.hero .left {
+    width: 48%;
 }
 
-.hero-value img.hero-img {
+.hero .left .img-hero {
     width: 470px;
     height: 685px;
-    object-fit: cover;
+    border-radius: 20px;
 }
 
-.hero .info {
+.hero .right {
     width: 470px;
 }
 
-.hero .info .title {
-    font-family: "Sen";
+.hero .right .headding {
+    font-family: var(--font-heading);
     font-size: 5.8rem;
     line-height: 1.17;
     letter-spacing: -0.02em;
     color: #171100;
 }
 
-.hero .desc {
+.hero .right .desc {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #5f5b53;
+    padding: 22px 0 38px;
 }
 
-.hero .info .info-desc {
-    margin-top: 22px;
-}
-
-.hero .info .action {
-    margin-top: 38px;
+.hero .right .link {
     display: flex;
     align-items: center;
-    justify-items: center;
 }
 
-.hero .action a {
-    font-size: 1.8rem;
-    color: #ffffff;
-}
-
-.hero .btn {
-    width: 180px;
+.hero .right .btn {
     background: #ffb900;
-    border-radius: 32px;
+    width: 180px;
+    height: 64px;
+    text-align: center;
+    line-height: 32px;
+    padding: 17px 33px;
 }
 
-.hero .action .video {
+.hero .video {
+    margin-left: 28px;
+    border: none;
+    background: none;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
-.hero .video .play {
-    margin-left: 28px;
+.hero .video .icon {
     width: 40px;
     height: 40px;
-    padding-top: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 50%;
 }
 
-.hero .video .video-play {
+.hero .video span {
+    margin-left: 14px;
     font-weight: 600;
     font-size: 1.8rem;
     color: #171100;
 }
 
-.list-poppular .prices .btn {
-    height: 50px;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 1.4rem;
-    line-height: 25px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.list-poppular .prices .btn:hover {
-    background-color: var(--primary-color);
+.hero .recent {
+    margin-top: 26px;
 }

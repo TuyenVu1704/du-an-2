@@ -6,83 +6,89 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Education Platform Website - Lesson</title>
         <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Sen:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Sen:wght@700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
         <main style="height: 5000px">
             <!-- Header -->
-            <header class="header fixed">
+            <header class="header header-fix">
                 <div class="main-content">
-                    <!-- Nav-bar -->                                            
-                          <div class="body">
-                                <img
-                                    src="./assets/img/Logo.svg"
-                                    alt="Lesson."
-                                    class="logo-img"
-                                />
-                            
-                            <nav class="nav">
-                                <ul>
-                                    <li class="active">
-                                        <a href="#!">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">Courses</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">Pricing</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">Reviews</a>
-                                    </li>
-                                </ul>                                             
-                             </nav>
-                             <!-- Action -->
-                             <div class="action">
+                    <div class="body">
+                        <img
+                            src="./assets/img/Lesson..svg"
+                            alt="Lesson."
+                            class="logo"
+                        />
+
+                        <div class="nav">
+                            <ul>
+                                <li>
+                                    <a href="#!" class="active">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Reviews</a>
+                                </li>
+                            </ul>
+
+                            <div class="action">
                                 <a href="#!" class="btn">Sign Up</a>
                             </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </header>
+
             <!-- Hero -->
+
             <div class="hero">
                 <div class="main-content">
                     <div class="body">
-                        <div class="hero-value"><img src="./assets/img/hero.jpeg" alt="Hero" class="hero-img">
+                        <!-- Left -->
+                        <div class="left">
+                            <img
+                                src="./assets/img/hero.jpg"
+                                alt="Learn without limits and spread knowledge."
+                                class="img-hero"
+                            />
                         </div>
-                        <div class="info">
-                            <h1 class="title">Learn without limits and spread knowledge.</h1>
-                            <p class="desc info-desc">Build new skills for that “this is my year” feeling with courses, certificates, and degrees from world-class universities and companies.</p>
-                            <div class="action">
+                        <!-- Right -->
+                        <div class="right">
+                            <h1 class="headding">
+                                Learn without limits and spread knowledge.
+                            </h1>
+                            <p class="desc">
+                                Build new skills for that “this is my year”
+                                feeling with courses, certificates, and degrees
+                                from world-class universities and companies.
+                            </p>
+                            <div class="link">
                                 <a href="#!" class="btn">See Courses</a>
-                                <div class="video">
-                                    <img src="./assets/img/play.svg" alt="Play-hero" class="play">
-                                    <p class="video-play">Watch Video</p>
-                                </div>
+                                <button class="video">
+                                    <div class="icon">
+                                        <img
+                                            src="./assets/img/play.svg"
+                                            alt="play"
+                                        />
+                                    </div>
+                                    <span>Watch Video</span>
+                                </button>
                             </div>
-                            <p class="desc">Recent engagement</p>
-                            <div class="trend">
-                                <div class="students">
-                                    <h3 class="h3-trend">50K</h3>
-                                    <p class="desc">Students</p>
-                                </div>
-                                <div class="courses">
-                                    <h3 class="h3-trend">70+</h3>
-                                    <p class="desc">Courses</p>
-                                </div>
-                                <p class="desc">Recent engagement</p>
-                                <p class="desc stats"><strong>50K</strong> Students
-                                <strong>70+</strong> Courses</p>
-                            </div>
+                            <p class="desc recent">Recent engagement</p>
+
+                            <p class="desc"><strong>50K</strong> Students</p>
+                            <p class="desc"><strong>70+</strong> Coures</p>
                         </div>
                     </div>
                 </div>
