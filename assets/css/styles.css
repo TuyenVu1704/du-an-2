@@ -39,6 +39,14 @@ a {
     text-align: center;
 }
 
+.lv2 {
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
 /* Header */
 
 .header {
@@ -258,4 +266,46 @@ a {
     font-size: 4.4rem;
     color: #171100;
     margin-right: 8px;
+}
+
+/* Popular */
+
+.popular {
+    margin-top: 200px;
+}
+
+.popular .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .desc {
+    margin-top: 16px;
+    width: 458px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.popular .arrow {
+    display: flex;
+    gap: 18px;
+}
+
+.popular .arrow .icon {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    border: 1px solid #ffb900;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular .arrow .icon:hover {
+    color: #ffffff;
+    background: var(--primary-color);
+    cursor: pointer;
 }
