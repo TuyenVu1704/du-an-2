@@ -652,3 +652,128 @@ a {
 .blog .dots .active {
     background: #ffb900;
 }
+
+/* Footer */
+footer {
+    background: #2e2100;
+}
+
+footer .row {
+    padding-top: 96px;
+    display: flex;
+    gap: 130px;
+    position: relative;
+    padding-bottom: 38px;
+}
+
+footer .row::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+    background: #59554b;
+}
+
+footer .row .colum-1 {
+    margin-right: 15px;
+    width: 22.8%;
+}
+
+footer .colum-1 .logo {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 34px;
+    color: #ffffff;
+}
+
+footer .colum-1 .logo span {
+    color: var(--primary-color);
+}
+
+footer .colum-1 .desc {
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+footer .social {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 178px;
+}
+
+footer .colum-2,
+footer .colum-3 {
+    flex-shrink: 0;
+}
+
+footer .colum-4 {
+    margin-left: -56px;
+}
+
+footer .colum-4 p {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+footer .colum-4 span {
+    color: #ffffff;
+}
+
+footer .title,
+footer .colum-4 .title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 14px;
+}
+
+footer .title::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 130px;
+    bottom: 0;
+    height: 1px;
+    background: #59554b;
+}
+
+footer ul {
+    margin-top: 28px;
+}
+
+footer ul li {
+    margin-top: 12px;
+}
+
+footer ul li a {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+footer .copy {
+    padding: 28px 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #807d74;
+}
